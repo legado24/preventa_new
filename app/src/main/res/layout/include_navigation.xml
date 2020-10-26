@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:fitsSystemWindows="true"
+    android:layout_gravity="start" android:layout_marginLeft="-60dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <!--app:menu="@menu/drawer_view"-->
+    <!--android:layout_gravity="start" android:layout_marginLeft="-64dp"-->
+
+    <ScrollView
+        android:id="@+id/activity_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.legado.preventagps.activities.DashboardActivity">
+
+
+
+    </ScrollView>
+
+</com.google.android.material.navigation.NavigationView>

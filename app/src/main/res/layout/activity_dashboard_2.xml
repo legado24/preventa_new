@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonColorWhite">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:scrollingCache="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout3">
+
+<!--                <include layout="@layout/fragment_home" />-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/contenedorFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="0dp"
+                    tools:layout_conversion_absoluteWidth="411dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp">
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/include_custom_toolbar_layout"  />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/floatings"
+            layout="@layout/include_floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_conversion_absoluteHeight="88dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteY="510dp" />
+
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_gradient"-->
+<!--            tools:layout_conversion_absoluteHeight="4dp"-->
+<!--            tools:layout_conversion_absoluteWidth="411dp"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_editor_absoluteY="598dp" />-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBottomMenu"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="@dimen/_100sdp"
+            android:background="@color/commonColorWhite"
+            android:elevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:cardElevation="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:theme="@style/colorFontTab"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:background="@color/commonColorWhite"
+                app:itemTextAppearanceActive="@drawable/state_check_tab"
+                app:itemTextAppearanceInactive="@drawable/state_check_tab"
+                 app:menu="@menu/menu_tab_navigation"
+                android:foregroundTint="@color/tab_home_active"
+                app:itemTextColor="@color/tab_home_active"
+                tools:layout_conversion_absoluteHeight="56dp"
+                tools:layout_conversion_absoluteWidth="411dp" />
+        </androidx.cardview.widget.CardView>
+        <!--         app:itemIconTint="@drawable/color_state_primary"-->
+        <!--         app:itemTextColor="@drawable/color_state_primary"-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

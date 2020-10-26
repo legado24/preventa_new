@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:icon="@drawable/notification"
+        android:orderInCategory="100"
+        android:title="Notificaciones"
+        app:showAsAction="always" />
+    <item
+
+        android:icon="@drawable/camion"
+        android:orderInCategory="100"
+        android:title="Cart"
+        app:showAsAction="always" />
+    <item
+
+        android:icon="@drawable/carrito"
+        android:orderInCategory="100"
+        android:title="Cart"
+        app:showAsAction="always" />
+
+
+<!--    <item-->
+<!--        android:id="@+id/action_cart"-->
+<!--        android:icon="@drawable/ic_customer"-->
+<!--        android:iconTint="@color/black"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="asas"-->
+<!--        android:visible="true"-->
+<!--        app:actionLayout="@layout/menu_cart"-->
+<!--        app:iconTint="@color/black"-->
+<!--        app:showAsAction="always" />-->
+</menu>

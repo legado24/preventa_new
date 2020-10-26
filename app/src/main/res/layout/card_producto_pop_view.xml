@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="174dp" android:elevation="@dimen/_5sdp" app:cardElevation="@dimen/_10sdp"
+    android:layout_height="250dp"
+    android:layout_margin="@dimen/_12sdp">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cvCategoria"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+         <ImageView
+             android:id="@+id/imageView4"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="1.0"
+             app:srcCompat="@drawable/circle_product" />
+
+         <ImageView
+             android:id="@+id/imageView5"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="@+id/imageView4"
+             app:layout_constraintTop_toTopOf="parent"
+             app:srcCompat="@drawable/elipse_produc" />
+
+         <ImageView
+             android:id="@+id/ivProductoPop"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="@+id/imageView4"
+             app:layout_constraintStart_toStartOf="@+id/imageView4"
+             app:layout_constraintTop_toTopOf="@+id/imageView4"
+             app:srcCompat="@drawable/pizza_clasica" />
+
+         <TextView
+             android:id="@+id/tvNombreProdPop"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:fontFamily="@font/poppins"
+             android:text="Pizza Clásica"
+             android:textColor="#515F65"
+             android:textSize="12dp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.336"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+         <TextView
+             android:id="@+id/tvDescProdPop"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="24dp"
+             android:text="Salsa clásica de la casa"
+             android:textColor="#515F65"
+             android:textSize="7dp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.32"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="@+id/tvNombreProdPop" />
+
+         <TextView
+             android:id="@+id/tvPrecioPop"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/poppins_semibold"
+             android:text="$12.58"
+             android:textColor="#153E73"
+             android:textSize="14dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.246"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/tvDescProdPop" />
+
+         <ImageView
+             android:id="@+id/imageView7"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintBottom_toTopOf="@+id/imageView5"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.835"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="@+id/imageView4"
+             app:layout_constraintVertical_bias="0.424"
+             app:srcCompat="@drawable/ic_icon_heart_noselected" />
+
+         <ImageView
+             android:id="@+id/imageView10"
+             android:layout_width="70dp"
+             android:layout_height="68dp"
+             android:layout_marginTop="24dp"
+             android:background="@color/transparent"
+             android:scaleType="centerCrop"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="1.0"
+             app:layout_constraintStart_toEndOf="@+id/tvPrecioPop"
+             app:layout_constraintTop_toBottomOf="@+id/imageView5"
+             app:srcCompat="@drawable/icon_circle" />
+
+         <ImageView
+             android:id="@+id/imageView11"
+             android:layout_width="18dp"
+             android:layout_height="18dp"
+             android:layout_marginTop="6dp"
+             android:scaleType="centerCrop"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.48"
+             app:layout_constraintStart_toEndOf="@+id/tvDescProdPop"
+             app:layout_constraintTop_toTopOf="@+id/imageView10"
+             app:layout_constraintVertical_bias="0.578"
+             app:srcCompat="@drawable/icon_go" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
